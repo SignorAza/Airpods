@@ -387,16 +387,25 @@ transition: color 300ms;
     .section__two-right{
         width: 100%;
     }
-    .items{
-      width: 50%; 
-    }
+  
    .item__box{
-  flex-wrap: wrap;
     display: flex;
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
     margin: 0 10px;
+    padding-left: 40px;
     width: 100%;
-justify-content: center;
+   }
+   
+   .item-img{
+    width: 125px;
+    height: 160px;
+    display: flex;
+    margin: 0 auto;
+   }
+   .item-title{
+    font-size: 20px;
    }
 }
 
