@@ -35,6 +35,8 @@ body{
 .header__nav{
     background: #282828;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+
 }
 .header__nav-container{
     display: flex;
@@ -102,9 +104,6 @@ padding: 5px 0;
 }
 
 
-.main__box:hover{
-    transform: scale(1.07);
-}
 
 .main__box-title{
 font-size: 100px;
@@ -163,6 +162,11 @@ font-family: 'MM';
 
 .section__one-img{
     transition: 600ms;
+    max-width: 333px;
+}
+
+.section__two-img{
+    max-width: 333px;
 }
 
 .section__one-img:hover{
@@ -184,9 +188,13 @@ font-family: 'MM';
     color: #FFFFFF;
     font-family: 'MM';
     }
+    .section__two{
+        max-width: 333px;
+    }
 
     .section__two-img{
         transition: 600ms;
+        max-width: 333px;
     }
     
     .section__two-img:hover{
@@ -198,6 +206,7 @@ font-family: 'MM';
         margin-top: 50px;
         align-items: center;
         gap: 13px;
+        justify-content: space-between;
     }
 
     .section__three-left__text{
@@ -205,7 +214,8 @@ font-size: 20px;
 line-height: 24px;
 text-align: right;
 color: #FFFFFF;
-width: 333px;
+max-width: 333px;
+width: 100%;
 }
 
 .section__three-right__text{
@@ -213,7 +223,16 @@ width: 333px;
     line-height: 24px;
     text-align: right;
     color: #FFFFFF;
-    width: 333px;
+    max-width: 333px;
+    width: 100%;
+   
+
+    }
+
+    .section__three-center{
+        max-width: 333px;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .section__three-center__img{
@@ -226,6 +245,11 @@ width: 333px;
     .section__three-center__img:hover{
         transform: scale(-1,1);
 
+    }
+
+    .section__three-center__pic{
+        max-width: 333px;
+    
     }
 
   .before::before{
@@ -241,12 +265,14 @@ width: 333px;
     width: 61px;
     height: 1px;
     background: #C4C4C4;
+    gap: 30px;
   }   
 
   .item__box{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 80px;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
@@ -273,7 +299,7 @@ padding: 10px 0px 20px 0px;
 }
 
 .items{
-    width: 25%;
+    width: 255px;
     height: 312px;
     background: #FFFFFF;
     border-radius: 6px;
@@ -283,7 +309,6 @@ padding: 10px 0px 20px 0px;
     justify-content: center;
     align-items: center;
     transition: 300ms;
-    
     }
 
     .items:hover{
@@ -304,7 +329,7 @@ color: #FFFFFF;
 background: #282828;
 box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.25);
 margin-top: 55px;
-width: 100%;
+max-height: 333px;
 }
 
 .footer__box{
@@ -334,325 +359,140 @@ transition: color 300ms;
 .footer__pay{
     display: flex;
     gap: 30px;
+    max-width: 250px;
 }
 
-/*  */
 
 
-@media(max-width:1300px){
-    .main__box{
+@media(max-width:1140px){
+    .section__three-center__pic{
         width: 100%;
+        width: 222px;
     }
-    .main__box-title{
-        font-size: 80px;
-        text-align: center;
-    }
-    .section__one-text{
-        margin-right: 50px;
-        margin-left: 30px;
-        width: 100%;
-    }
-    .section__one-left{
-        width: 100%;
-    }
-    .section__one-right{
-        width: 100%;
-        margin-right: 30px;
+    .section__three-left__text,
+    .section__three-right__text{
+        font-size: 15px;
+        line-height: 19px;
     }
     .section__three{
-        width: 100%;
-        
-    }
-    .section__three-left__text,
-    .section__three-right__text{
-        width: 100%;
-    }
-  
-   .section__three-center__img{
-    width: 100%;
-   }
-   .section__one{
-    width: 100%;
-   }
-    .section__one-img{
-        width: 100%;
-    }
-    .section__one-left{
-        width: 100%;
-        padding-right: 30px;
-    }
-    .section__two-img{
-        width: 100%;
-    }
-    .section__two-right{
-        width: 100%;
-    }
-  
-   .item__box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 90%;
-    margin: 0 10px;
-    padding-left: 40px;
-    width: 100%;
-   }
-   
-   .item-img{
-    width: 125px;
-    height: 160px;
-    display: flex;
-    margin: 0 auto;
-   }
-   .item-title{
-    font-size: 20px;
-   }
-}
-
-@media(max-width:1060px){
-    .header{
-        width: 100%;
-    }
-    .header__logo{
-        width: 30%;
-    }
-    .header__nav-link{
-        font-size: 10px;
-        line-height: 14px;
-    }
-    .header__nav-list{
-        width: 20%;
-        gap: 20px;
-    }
-    
-    .header__nav-container{
         display: flex;
-        gap: 20px;
-    }
-    .header__nav-img{
-        display: flex;
-        gap: 80px;
-        margin-right: 50px;
-    }
-    .search{
-        width: 100%;
-    }
-    .shop{
-        width: 100%;
-    }
-    .section__three-left__text,
-    .section__three-right__text{
-        width: 100%;
-        text-align: center;
-    }
-  
-   .section__three-center__img{
-    width: 100%;
-   } 
-   .section__three{
-    display: flex;
-    flex-direction: column;
-   }
-   .item__box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-}
-@media(max-width:576px){   
-    
-    .main__box-title{
-        font-size: 40px;
-        text-align: center;
-    }
-    .main__box{
-        width: 100%;
-        height: 300px;
-        background: url(../images/Header.jpg) no-repeat center ;
-    }
-    .main__box-button{
-    background: #fdfaff;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-     
-    }
-    .main__box__link{
-        font-size: 15px;
-    }
-    .main__box__img{
-        width: 10%;
-    }
-    .header{
-        width: 100%;
-    }
-    .header__logo{
-        width: 30%;
-    }
-    .header__nav-link{
-        font-size: 10px;
-        line-height: 14px;
-    }
-    .header__nav-list{
-        width: 20%;
-        gap: 20px;
-    }
-    
-    .header__nav-container{
-        display: flex;
-        gap: 20px;
-    }
-    .header__nav-img{
-        display: flex;
-        gap: 10px;
-        margin-right: 10px;
-    }
-    .search{
-        width: 50%;
-    }
-    .shop{
-        width: 50%;
-    }
-
-    .section__one{
-        width: 100%;
         gap: 30px;
     }
 
-    .section__one-right{
-        width: 100%;
+    .before,
+    .after{
+        display: none;
     }
-   
-   
-    .section__one-text{
-        width: 70%;
-    font-size: 12px;
-    line-height: 17px;
+}
+
+@media(max-width:750px){
+    .main__box-title{
+        font-size: 45px;
+        line-height: 49px;
+        text-align: center;
+    }
+
+    .main__box__link{
+        font-size: 15px;
+        line-height: 19px; 
+    }
+}
+
+@media(max-width:576px){
+    .footer__pay{
+        max-width: 150px;
+    }
+
+    .footer__pay-visa,
+    .footer__pay-mastercard{
+        max-width: 50px;
+    }
+    .header__nav-link{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .header__logo{
+        max-width: 50%;
+        margin:  0 auto;
+    }
+    .header__nav-box{
+        gap: 10px;
+    }
+    .header__nav-container{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .header__nav-box{
+        flex-direction: column  ;
+    }
+    .section__one,
+    .section__three{
+        flex-direction: column;
     }
     .section__two{
-        width: 100%;
-        margin-top: 50px;
-        gap: 20px;
+        flex-direction: column-reverse;
     }
-    .section__two-img{
-        width: 100%;
-    }
-    .section__two-right{
-        width: 50%;
-    }
+    .section__one-text,
     .section__two-text{
-    font-size: 12px;
-    line-height: 17px;
-    margin-right: 20px;
-    }
-    .section__three{
-       display: flex;
-       flex-direction: column;
-    }
-    .section__three-right__text,
-    .section__three-left__text{
-    max-width: 406px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 17px;
-    text-align: center;
-    }
-    .section__three-right{
-        margin-right: 20px;
-    }
-
-    .section__three-center{
-        margin: 0 20px 0 20px;
-    }
-
-    .section__three-center__pic{
-        width: 50%;
-    }
-
-
-    .item__box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .items{
-    width: 50%;
-
-}
-.item-img{
-    width: 75%;
-}
-    .footer{
-        max-width: 100%;
-    }
-    .footer__box{
-    height: 200px;
-    display: flex;
-
-    }
-
-    .footer__logo{
-    width: 20%;
-}
-    .footer__nav-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    height: 100px;
-}
-.footer__nav-link{
-    font-size: 12px;
-}
-    .footer__pay{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 50px;
-}
-    .footer__pay-visa{
-    width: 52px;
-}
-    .footer__pay-mastercard{
-    width: 52px;
-}
-    @media(max-width: 390px){
-    .section__one{
-        flex-direction: column;
-    }
-    .section__one-right{
-        width: 80%;
-        align-items: center;
-        justify-content: center;
-        padding-left: 20px;
-    }
-    .section__one-left{
-        text-align: center;
-      
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center; 
     }
     .section__one-text{
-    width: 100%;
-    padding-right: 20px;
+        margin-bottom: 20px;
     }
-}
-
-@media(max-width: 356px){
-    .item-img{
-        width: 50%;
-        margin: 0 auto;
-        display: flex;
     
+    .section__one-img{
+        max-width: 200px;
     }
+    .section__two-img,{ 
+        width:233px;
+    }
+    .section__two-img{
+        width:233px;
+    }
+    .section__three-center__pic{
+        max-width: 200px;
+    }
+    .section__two-text{
+        margin-top: -50px;
+    }
+    .section__three-left__text,
+    .section__three-right__text{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+    .items{
+        width: 70%;
+    }
+    .item-img {
+        padding-left: 30px;
+    }
+    
+    .footer__box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        padding: 20px;
+    }
+    .footer__logo{
+        width: 120px;
+
+    }
+    .footer__nav-link{
+        font-size: 14px;
+        line-height: 19px; 
+    }
+    .footer__pay-visa,
+    .footer__pay-mastercard{
+        width: 25px; 
+    }
+    
 }
-}
-
-
-
-
-
-
-
 
 
 
